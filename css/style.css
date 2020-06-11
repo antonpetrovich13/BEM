@@ -90,10 +90,16 @@ body {
   overflow: hidden;
 }
 
+.content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
 .main {
   background: url(../img/fon_1.png) no-repeat;
   padding: 153px 0;
-  min-height: 1920px;
+  min-height: 1080px;
   min-width: 100%;
 }
 
@@ -174,4 +180,36 @@ body {
 
 .button:active {
   margin: 3px 0 0 0;
+}
+
+.submenu {
+  padding: 22px 0;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.menu__link {
+  font-family: Lato;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #3c3c3c;
+  text-transform: uppercase;
+}
+
+.menu__link:hover {
+  font-weight: 700;
+  color: #ada074;
+}
+
+.container-2 {
+  max-width: 422px;
+  margin: 0 auto;
 }
