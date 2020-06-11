@@ -87,17 +87,18 @@ body{
 	}
 }
 
-//MENU
+//subMENU
 .submenu {
 	padding: 22px 0;
 }
 .menu {
+	max-width: 422px;
+	margin: 0 auto;
 	&__list {
 		display: flex;
 		justify-content: space-between;
 	}
 	&__link {
-		font-family: Lato;
 		font-size: 15px;
 		line-height: 1.2;
 		font-weight: 400;
@@ -109,10 +110,7 @@ body{
 		}
 	}
 }
-.container-2{
-	max-width: 422px;
-	margin: 0 auto;
-}
+
 
 //ABOUT
 
@@ -181,10 +179,100 @@ body{
 	max-width: 823px;
 	margin: 0 auto;
 }
-.title {
+.title_bl{
+		font-size: 34px;
+		font-weight: 900;
+		text-transform: uppercase;
+		letter-spacing: 0.16em;
+		text-align: center;
+		color: #000;
+		&:after{
+			content: '';
+			display: block;
+			position: relative;
+			top: 49px;
+			background-color: #000;
+			width: 107px;
+			height: 2px;
+			margin: 0 auto;
+		}
+		& span{
+			font-size: 26px;
+			font-weight: 400;
+			text-transform: none;
+		}
 }
 
+//PORTFOLIO
 
+.portfolio {
+	background-color: #f3f3f3;
+	min-height: 1671px;
+	padding: 107px 0;
+	&__box{
+	}
+	&__title {}
+	&__menu {
+		padding: 91px 0 0 0 ;
+		&__link{
+		}
+	}
+	&__content {
+		padding: 120px 0 0 0;
+	}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -13.5px;
+		justify-content: center;
+	}
+	&__column {
+		margin: 16px 0 0 0;
+		padding: 0 13.5px;
+		flex: 0 1 50%;
+	}
+	&__btn {
+		position: relative;
+		top: 64px;
+		display: flex;
+		justify-content: center;
+	}
+}
+.container-4 {
+	max-width: 1103px;
+	margin: 0 auto;
+}
+.title {
+	&_bl {
+		&:after{
+			height: 1px;
+			top: 40px;
+		}
+	}
+}
+.button_bl {
+	& a{
+		display: block;
+		text-align: center;
+		padding: 10px 0;
+		font-size: 16px;
+		line-height: 1.2;
+		letter-spacing: 0.06em;
+		color: #000;
+		width: 182px;
+		height: 47px;
+		border: solid;
+	}
+	&:active{
+		margin: 3px 0 0 0;
+	}
+}
+.menu {
+	&__list {
+	}
+	&__link {
+	}
+}
 
 
 
