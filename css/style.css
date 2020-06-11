@@ -404,3 +404,39 @@ body {
 .button_bl:active {
   margin: 3px 0 0 0;
 }
+
+.partners {
+  background: url(../img/fon_2.png) 0 0 no-repeat;
+  padding: 100px 0;
+}
+
+.partners__title {
+  text-align: center;
+  font-size: 30.4px;
+  line-height: 1.2;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.partners__row {
+  max-width: 584px;
+  margin: 0 auto;
+  padding: 93px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container-5 {
+  max-width: 584px;
+  margin: 0 auto;
+}
