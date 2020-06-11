@@ -12,6 +12,7 @@ body{
 	overflow: hidden;
 }
 .content {
+	flex: 1 1 auto;
 }
 
 //MAIN
@@ -19,7 +20,7 @@ body{
 .main {
 	background: url(../img/fon_1.png) no-repeat;
 	padding: 153px 0;
-	min-height: 1920px;
+	min-height: 1080px;
 	min-width: 100%;
 	&__box {
 		display: flex;
@@ -85,6 +86,36 @@ body{
 		margin: 3px 0 0 0;
 	}
 }
+
+//MENU
+.submenu {
+	padding: 22px 0;
+}
+.menu {
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__link {
+		font-family: Lato;
+		font-size: 15px;
+		line-height: 1.2;
+		font-weight: 400;
+		color: #3c3c3c;
+		text-transform: uppercase;
+		&:hover{
+			font-weight: 700;
+			color: #ada074;
+		}
+	}
+}
+.container-2{
+	max-width: 422px;
+	margin: 0 auto;
+}
+
+
+
 
 
 //FOOTER
