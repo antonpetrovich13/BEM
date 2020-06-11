@@ -186,6 +186,11 @@ body {
   padding: 22px 0;
 }
 
+.menu {
+  max-width: 422px;
+  margin: 0 auto;
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,7 +201,6 @@ body {
 }
 
 .menu__link {
-  font-family: Lato;
   font-size: 15px;
   line-height: 1.2;
   font-weight: 400;
@@ -207,11 +211,6 @@ body {
 .menu__link:hover {
   font-weight: 700;
   color: #ada074;
-}
-
-.container-2 {
-  max-width: 422px;
-  margin: 0 auto;
 }
 
 .about {
@@ -306,4 +305,102 @@ body {
 .container-3 {
   max-width: 823px;
   margin: 0 auto;
+}
+
+.title_bl {
+  font-size: 34px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  text-align: center;
+  color: #000;
+}
+
+.title_bl:after {
+  content: '';
+  display: block;
+  position: relative;
+  top: 49px;
+  background-color: #000;
+  width: 107px;
+  height: 2px;
+  margin: 0 auto;
+}
+
+.title_bl span {
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.portfolio {
+  background-color: #f3f3f3;
+  min-height: 1671px;
+  padding: 107px 0;
+}
+
+.portfolio__menu {
+  padding: 91px 0 0 0;
+}
+
+.portfolio__content {
+  padding: 120px 0 0 0;
+}
+
+.portfolio__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -13.5px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.portfolio__column {
+  margin: 16px 0 0 0;
+  padding: 0 13.5px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50%;
+  flex: 0 1 50%;
+}
+
+.portfolio__btn {
+  position: relative;
+  top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.container-4 {
+  max-width: 1103px;
+  margin: 0 auto;
+}
+
+.title_bl:after {
+  height: 1px;
+  top: 40px;
+}
+
+.button_bl a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  color: #000;
+  width: 182px;
+  height: 47px;
+  border: solid;
+}
+
+.button_bl:active {
+  margin: 3px 0 0 0;
 }
