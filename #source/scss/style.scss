@@ -102,11 +102,13 @@ body{
 		font-size: 15px;
 		line-height: 1.2;
 		font-weight: 400;
-		color: #3c3c3c;
 		text-transform: uppercase;
-		&:hover{
-			font-weight: 700;
-			color: #ada074;
+		& a{
+			color: #3c3c3c;
+			&:hover{
+				font-weight: 700;
+				color: #ada074;
+			}
 		}
 	}
 }
@@ -115,7 +117,7 @@ body{
 //ABOUT
 
 .about {
-	margin: 129px 0 95px 0;
+	padding: 129px 0 95px 0;
 	&__title {
 		&_bl {
 			color: #000;
