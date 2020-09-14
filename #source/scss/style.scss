@@ -154,7 +154,7 @@ body,html{
 		100%{
 			bottom: 2%;
 		}
-		}
+	}
 }
 @media (max-width: 772px) {
 	.main__logo{
@@ -179,6 +179,14 @@ body,html{
 	}
 	.main__button{
 		margin: 55px 0 0 0;
+	}
+	@keyframes arrow{
+			0%{
+			bottom: 11%;
+		}
+		100%{
+			bottom: 8%;
+		}
 	}
 }
 @media (max-width: 395px) {
