@@ -251,6 +251,43 @@ body, html {
   }
 }
 
+@media (max-height: 357px) {
+  .main__logo a {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 110px;
+    flex: 0 110px;
+  }
+  .main__title {
+    margin: 20px 0 0 0;
+    font-size: 22px;
+  }
+  .main__title span {
+    font-size: 20px;
+  }
+  .main__title:after {
+    margin: 10px auto;
+  }
+  .main__button {
+    margin: 25px 0 0 0;
+  }
+  @-webkit-keyframes arrow {
+    0% {
+      bottom: 5%;
+    }
+    100% {
+      bottom: 2%;
+    }
+  }
+  @keyframes arrow {
+    0% {
+      bottom: 5%;
+    }
+    100% {
+      bottom: 2%;
+    }
+  }
+}
+
 @media (max-width: 772px) {
   .main__logo a {
     -webkit-box-flex: 0;
