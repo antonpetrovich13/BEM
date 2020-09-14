@@ -403,6 +403,9 @@ body, html {
 }
 
 @media (max-width: 400px) {
+  .menu {
+    padding: 12px 0 2px 0;
+  }
   .menu__link {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 50%;
