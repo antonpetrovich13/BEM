@@ -536,7 +536,7 @@ body,html{
 		padding: 50px 0 20px 0;
 	}
 	.partners__title{
-		margin: 0 0 63px 0;
+		margin: 0 0 53px 0;
 	}
 	.partners__wrap{
 		margin: 0;
@@ -545,5 +545,10 @@ body,html{
 	.partners__column{
 		flex: 0 1 50%;
 		padding: 0 0 40px 0;
+	}
+}
+@media (max-width: 480px) {
+	.partners__title{
+		margin: 0 0 43px 0;
 	}
 }
