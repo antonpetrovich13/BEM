@@ -451,14 +451,12 @@ body,html{
 		font-size: 15px;
 		line-height: 1.2;
 		color: #3c3c3c;
-		transition: all 0.3s ease 0s;
 		cursor: pointer;
-		&:hover{
-				transition: all 0.3s ease 0s;
-				color: #ada074;
-				font-weight: 700;
-			}
 	}
+}
+.active{
+	color: #ada074;
+	font-weight: 700;
 }
 
 @media (max-width: 768px) {

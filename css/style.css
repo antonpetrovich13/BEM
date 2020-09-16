@@ -659,16 +659,10 @@ body, html {
   font-size: 15px;
   line-height: 1.2;
   color: #3c3c3c;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
   cursor: pointer;
 }
 
-.filter__item:hover {
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+.active {
   color: #ada074;
   font-weight: 700;
 }
