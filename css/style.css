@@ -607,7 +607,7 @@ body, html {
 }
 
 .portfolio__filter {
-  margin: 0 0 136px 0;
+  margin: 0 0 80px 0;
 }
 
 .portfolio__items {
@@ -774,5 +774,226 @@ body, html {
 @media (max-width: 480px) {
   .partners__title {
     margin: 0 0 43px 0;
+  }
+}
+
+.contact {
+  padding: 153px 0 82px 0;
+}
+
+.contact__title {
+  margin: 0 0 119px 0;
+}
+
+.contact__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -41.5px;
+}
+
+.contact__form {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50%;
+  flex: 0 1 50%;
+  padding: 0 20px;
+}
+
+.contact__info {
+  padding: 0 20px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50%;
+  flex: 0 1 50%;
+}
+
+.form__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 75px 0;
+}
+
+.form__column {
+  padding: 0 30px;
+}
+
+.form__name {
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #000000;
+  padding: 0 0 19px 0;
+}
+
+.form__input {
+  -webkit-box-shadow: 0 1px 0 0 #000 inset;
+  box-shadow: 0 1px 0 0 #000 inset;
+  width: 161px;
+  height: 35px;
+  background-color: #f8f7f7;
+  padding: 0 0 0 10px;
+}
+
+.form__bottom {
+  padding: 0 0 0 30px;
+}
+
+.form__textarea {
+  -webkit-box-shadow: 0 1px 0 0 #000 inset;
+  box-shadow: 0 1px 0 0 #000 inset;
+  width: 383px;
+  height: 118px;
+  background-color: #f8f7f7;
+  padding: 10px 0 0 10px;
+}
+
+.form__button {
+  margin: 42px 0 0 0;
+}
+
+.form__send {
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #000000;
+  background-color: #fff;
+}
+
+.info__title {
+  width: 252px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.info__name {
+  margin: 36px 0 0 0;
+  color: #000;
+  font-weight: 700;
+}
+
+.info__links {
+  margin: 22px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+.info__link_in {
+  margin: 0 0 0 12px;
+  padding: 0 0 0 3px;
+}
+
+.info__mail {
+  margin: 13px 0 0 0;
+}
+
+.info__mail span {
+  font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+  .contact__wrap {
+    margin: 0 -10px;
+  }
+  .contact__form {
+    padding: 0 5px;
+  }
+  .contact__info {
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 904px) {
+  .contact {
+    padding: 100px 0 60px 0;
+  }
+  .contact__title {
+    margin: 0 0 80px 0;
+  }
+  .contact__wrap {
+    max-width: 385px;
+    margin: 0 auto;
+  }
+  .contact__form {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+  }
+  .contact__info {
+    padding: 30px 0 0 0;
+    max-width: 252px;
+    margin: 0 auto;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+  }
+  .form__top {
+    margin: 0 0 50px 0;
+  }
+  .form__button {
+    margin: 22px 0 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 50px 0 60px 0;
+  }
+  .contact__title {
+    margin: 0 0 50px 0;
+  }
+  .form__top {
+    margin: 0 0 30px 0;
+  }
+  .form__name {
+    padding: 0 0 10px 0;
+  }
+  .form__column {
+    padding: 0 10px;
+  }
+  .form__input {
+    width: 130px;
+  }
+  .form__textarea {
+    width: 280px;
+  }
+  .form__bottom {
+    padding: 0 0 0 10px;
+  }
+  .form__button {
+    margin: 15px 0 0 0;
+    padding: 0 0 0 5px;
+  }
+  .contact__info {
+    padding: 20px 0 0 0;
+  }
+  .info__name {
+    margin: 15px 0 0 0;
+  }
+  .info__links {
+    margin: 12px 0 0 0;
   }
 }
