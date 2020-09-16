@@ -619,10 +619,19 @@ body,html{
 		color: #000000;
 		background-color: #fff;
 		transition:all 0.3s ease 0s;
-		&:hover{
-			transition:all 0.3s ease 0s;
-			transform:scale(1.2);
-		}
+		animation-name:send;
+		animation-duration:1s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+}
+@keyframes send{
+	0%{
+		transform:scale(1);
+	}
+	100%{
+		transform:scale(1.2);
 	}
 }
 .info {
