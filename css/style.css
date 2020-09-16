@@ -239,6 +239,21 @@ body, html {
   opacity: 0.8;
 }
 
+.btn_b a {
+  color: #000;
+  border: 2px solid #000;
+}
+
+.btn_b a:hover {
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #000;
+  opacity: 0.8;
+}
+
 @media (max-height: 605px) {
   .main {
     padding: 50px 0 0 0;
@@ -578,5 +593,120 @@ body, html {
   }
   .about__sublabel {
     margin: 10px 0 0 0;
+  }
+}
+
+.portfolio {
+  background-color: #f3f3f3;
+  padding: 0 0 60px 0;
+}
+
+.portfolio__title {
+  padding: 107px 0 30px 0;
+  margin: 0 0 50px 0;
+}
+
+.portfolio__filter {
+  margin: 0 0 136px 0;
+}
+
+.portfolio__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -13.5px;
+}
+
+.portfolio__column {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50%;
+  flex: 0 1 50%;
+  padding: 0 13.5px;
+  margin: 0 0 27px 0;
+}
+
+.portfolio__item img {
+  max-width: 100%;
+}
+
+.portfolio__button {
+  padding: 35px 0 0 0;
+  margin: 0 auto;
+}
+
+.filter__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.filter__item {
+  margin: 0 25px;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #3c3c3c;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.filter__item:hover {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: #ada074;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .portfolio__title {
+    padding: 80px 0 30px 0;
+  }
+  .portfolio__title {
+    margin: 0 0 40px 0;
+  }
+  .portfolio__filter {
+    margin: 0 0 70px 0;
+  }
+  .portfolio__column {
+    margin: 0 0 13.5px 0;
+  }
+}
+
+@media (max-width: 481px) {
+  .portfolio {
+    padding: 0 0 30px 0;
+  }
+  .portfolio__title {
+    padding: 50px 0 30px 0;
+  }
+  .portfolio__title {
+    margin: 0 0 30px 0;
+  }
+  .portfolio__column {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+  }
+  .portfolio__filter {
+    margin: 0 0 40px 0;
+  }
+  .filter__item {
+    margin: 0 15px;
   }
 }

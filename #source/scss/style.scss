@@ -116,6 +116,19 @@ body,html{
 				opacity: 0.8;
 			}
 	}
+	&_b{
+		& a{
+			color: #000;
+			border: 2px solid #000;
+			&:hover{
+				transition:all 0.4s ease 0s;
+				border: 2px solid #fff;
+				color: #fff;
+				background-color:#000;
+				opacity: 0.8;
+			}
+		}
+	}
 }
 @media (max-height: 605px) {
 	.main{
@@ -390,5 +403,95 @@ body,html{
 	}
 	.about__sublabel{
 		margin: 10px 0 0 0;
+	}
+}
+
+//=========================  PORTFOLIO  ==============
+
+.portfolio {
+	background-color: #f3f3f3;
+	padding: 0 0 60px 0;
+	&__title {
+		padding: 107px 0 30px 0;
+		margin: 0 0 50px 0;
+	}
+	&__filter {
+		margin: 0 0 136px 0;
+	}
+	&__items {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		margin: 0 -13.5px;
+	}
+	&__column {
+		flex: 0 1 50%;
+		padding: 0 13.5px;
+		margin: 0 0 27px 0;
+	}
+	&__item {
+		img {
+			max-width: 100%;
+		}
+	}
+	&__button {
+		padding: 35px 0 0 0;
+		margin: 0 auto;
+	}
+}
+.filter {
+	&__list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__item {
+		margin: 0 25px;
+		font-size: 15px;
+		line-height: 1.2;
+		color: #3c3c3c;
+		transition: all 0.3s ease 0s;
+		cursor: pointer;
+		&:hover{
+				transition: all 0.3s ease 0s;
+				color: #ada074;
+				font-weight: 700;
+			}
+	}
+}
+
+@media (max-width: 768px) {
+	.portfolio__title{
+		padding: 80px 0 30px 0;
+	}
+	.portfolio__title{
+		margin: 0 0 40px 0;
+	}
+	.portfolio__filter{
+		margin: 0 0 70px 0;
+	}
+	.portfolio__column{
+		margin: 0 0 13.5px 0;
+	}
+}
+@media (max-width: 481px) {
+	.portfolio{
+		padding: 0 0 30px 0;
+	}
+	.portfolio__title{
+		padding: 50px 0 30px 0;
+	}
+	.portfolio__title{
+		margin: 0 0 30px 0;
+	}
+	.portfolio__column{
+		flex: 0 1 100%;
+	}
+	.portfolio__filter{
+		margin: 0 0 40px 0;
+	}
+	.filter__item{
+		margin: 0 15px;
 	}
 }
