@@ -618,6 +618,11 @@ body,html{
 		letter-spacing: 0.06em;
 		color: #000000;
 		background-color: #fff;
+		transition:all 0.3s ease 0s;
+		&:hover{
+			transition:all 0.3s ease 0s;
+			transform:scale(1.2);
+		}
 	}
 }
 .info {
