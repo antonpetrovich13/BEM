@@ -493,3 +493,57 @@ body,html{
 		margin: 0 15px;
 	}
 }
+
+//====================================  PARTNERS  ===================
+
+.partners {
+	background: url(../img/fon_2.png) center / cover no-repeat;
+	padding: 100px 0 100px 0;
+	&__title {
+		margin:  0 0 93px 0;
+		text-align: center;
+		font-size: 30.4px;
+		line-height: 1.2;
+		font-weight: 300;
+		letter-spacing: 0.06em;
+		color: #ffffff;
+	}
+	&__body{
+		max-width: 604px;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+	&__wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 0 -15px;
+	}
+	&__column {
+		padding: 0 15px;
+		flex: 0 1 25%;
+	}
+	&__item {
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+@media (max-width: 650px) {
+	.partners{
+		padding: 50px 0 20px 0;
+	}
+	.partners__title{
+		margin: 0 0 63px 0;
+	}
+	.partners__wrap{
+		margin: 0;
+		text-align: center;
+	}
+	.partners__column{
+		flex: 0 1 50%;
+		padding: 0 0 40px 0;
+	}
+}
