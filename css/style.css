@@ -75,6 +75,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ibg img {
+  display: none;
+}
+
 body, html {
   font-family: 'Lato';
   height: 100vh;
@@ -144,6 +154,13 @@ body, html {
 }
 
 .main__title {
+  -webkit-transform: translate(0px, 120%);
+  -ms-transform: translate(0px, 120%);
+  transform: translate(0px, 120%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
   margin: 119px 0 0 0;
   max-width: 754px;
   text-align: center;
@@ -168,6 +185,13 @@ body, html {
   height: 2px;
   background-color: #fff;
   margin: 30px auto;
+}
+
+.main__title._active {
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .main__button {

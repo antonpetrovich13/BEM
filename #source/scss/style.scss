@@ -2,6 +2,13 @@
 @import "nullstyle.scss";
 @import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap);
 
+.ibg{
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		img{display: none};
+}
+
 body,html{
 	font-family: 'Lato';
 	height: 100vh;
@@ -48,6 +55,10 @@ body,html{
 		}
 	}
 	&__title {
+		transform: translate(0px,120%);
+		opacity: 0;
+		transition: all 0.8s ease 0s;
+
 		margin: 119px 0 0 0;
 		max-width: 754px;
 		text-align: center;
@@ -71,6 +82,12 @@ body,html{
 			margin: 30px auto;
 		}
 	}
+
+	&__title._active{
+		transform: translate(0px,0px);
+		opacity: 1;
+	}
+
 	&__button {
 		margin: 50px 0 0 0 ;
 	}
