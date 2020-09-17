@@ -93,9 +93,9 @@ body,html{
 	}
 
 	&__button {
-		margin: 50px 0 0 0 ;
 		transform:scale(0);
-		transition: all 0.8s ease 0.8s
+		transition: all 0.8s ease 0.8s;
+		margin: 50px 0 0 0 ;
 	}
 	&__button._active{
 		transform:scale(1);
@@ -305,6 +305,9 @@ body,html{
 	padding: 20px 0 0 0;
 	&__title {}
 	&__subtitle {
+		transition: all 0.8s ease 0.2s;
+		transform:translate(0px,-110%);
+		opacity: 0;
 		padding: 37px 0 0 0;
 		max-width: 688px;
 		margin: 0 auto;
@@ -314,6 +317,10 @@ body,html{
 		font-weight: 300;
 		color: #868585;
 	}
+	&__subtitle._active{
+		transform:translate(0px,-0);
+		opacity: 1;
+	}
 	&__wrap {
 		padding: 69px 0 0 0;
 		display: flex;
@@ -322,10 +329,15 @@ body,html{
 		margin: 0 -15px;
 	}
 	&__column {
+		transition: all 0.8s ease 0.4s;
+		transform:scale(0);
 		margin: 0 0 30px 0;
 		padding: 0 15px;
 		flex: 0 1 33.333%;
 		text-align: center;
+	}
+	&__column._active{
+		transform:scale(1);
 	}
 	&__item {
 		max-width: 260px;
@@ -364,6 +376,10 @@ body,html{
 }
 
 .title {
+		transition: all 0.8s ease 0s;
+		transform:translate(0px,-110%);
+		opacity: 0;
+
 		position: relative;
 		padding: 0 0 30px 0;
 		text-align: center;
@@ -385,7 +401,10 @@ body,html{
 			margin: 0 0 0 -41.5px;
 		}
 }
-
+.title._active{
+		transform:translate(0px,0px);
+		opacity: 1;
+}
 @media (max-width: 821px) {
 	.about{
 		margin: 50px 0 0 0;
@@ -408,6 +427,7 @@ body,html{
 @media (max-width: 686px) {
 	.about__column{
 		flex: 0 1 100%;
+		transition: all 0.8s ease 0.2s;
 	}
 	.about__item{
 		max-width: 600px;
