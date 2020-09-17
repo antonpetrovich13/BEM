@@ -478,9 +478,14 @@ body,html{
 		margin: 0 -13.5px;
 	}
 	&__column {
+		transition: all 0.8s ease 0s;
+		transform: scale(0);
 		flex: 0 1 50%;
 		padding: 0 13.5px;
 		margin: 0 0 27px 0;
+	}
+	&__column._active{
+		transform: scale(1);
 	}
 	&__item {
 		img {
@@ -488,8 +493,15 @@ body,html{
 		}
 	}
 	&__button {
+		transition: all 0.8s ease 0s;
+		transform:translate(0px,120%);
+		opacity: 0;
 		padding: 35px 0 0 0;
 		margin: 0 auto;
+	}
+	&__button._active{
+		transform:translate(0px,0px);
+		opacity: 1;
 	}
 }
 .filter {
@@ -573,8 +585,13 @@ body,html{
 		margin: 0 -15px;
 	}
 	&__column {
+		transition: all 0.8s ease 0s;
+		transform: scale(0);
 		padding: 0 15px;
 		flex: 0 1 25%;
+	}
+	&__column._active{
+		transform: scale(1);
 	}
 	&__item {
 		img {
@@ -825,6 +842,11 @@ body,html{
 		justify-content: center;
 	}
 	&__logo {
+		transition: all 0.8s ease 0s;
+		transform: scale(0);
+	}
+	&__logo._active{
+		transform: scale(1);
 	}
 	&__menu {
 		margin: 41px 0 0 0;
@@ -834,16 +856,52 @@ body,html{
 		margin: 0 -10px;
 	}
 	&__link {
+		transition: all 0.8s ease 0s;
 		flex: 0 1 25%;
+		opacity: 0;
 		padding: 0 10px;
 		line-height: 1.2;
+		&:nth-child(1){
+			transform:translate(-160%,0px);
+		}
+		&:nth-child(2){
+			transform:translate(-120%,0px);
+		}
+		&:nth-child(3){
+			transform:translate(120%,0px);
+		}
+		&:nth-child(4){
+			transform:translate(160%,0px);
+		}
+
+		&:nth-child(1)._active{
+			opacity: 1;
+			transform:translate(0px,0px);
+		}
+		&:nth-child(2)._active{
+			opacity: 1;
+			transform:translate(0px,0px);
+		}
+		&:nth-child(3)._active{
+			opacity: 1;
+			transform:translate(0px,0px);
+		}
+		&:nth-child(4)._active{
+			opacity: 1;
+			transform:translate(0px,0px);
+		}
 		& a{
 			color: #a4a4a4;
 		}
 	}
 	&__secure {
+		transition: all 0.8s ease 0s;
+		transform: scale(0);
 		margin: 34px 0 0 0;
 		line-height: 1.2;
 		color: #6c6c6c;
+	}
+	&__secure._active{
+		transform: scale(1);
 	}
 }
