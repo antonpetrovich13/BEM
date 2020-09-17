@@ -636,12 +636,26 @@ body,html{
 		margin: 0 -41.5px;
 	}
 	&__form {
+		transition:all 0.8s ease 0s;
+		transform: translate(-50%, 0px);
+		opacity: 0;
 		flex: 0 1 50%;
 		padding: 0 20px;
 	}
+	&__form._active{
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
 	&__info {
+		transition:all 0.8s ease 0s;
+		transform: translate(80%, 0px);
+		opacity: 0;
 		padding: 0 20px;
 		flex: 0 1 50%;
+	}
+	&__info._active{
+		transform: translate(0px, 0px);
+		opacity: 1;
 	}
 }
 .form {
