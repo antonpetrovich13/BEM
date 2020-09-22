@@ -725,12 +725,6 @@ body, html {
 }
 
 .portfolio__column {
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
   -webkit-box-flex: 0;
   -ms-flex: 0 1 50%;
   flex: 0 1 50%;
@@ -738,33 +732,13 @@ body, html {
   margin: 0 0 27px 0;
 }
 
-.portfolio__column._active {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .portfolio__item img {
   max-width: 100%;
 }
 
 .portfolio__button {
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
-  -webkit-transform: translate(0px, 120%);
-  -ms-transform: translate(0px, 120%);
-  transform: translate(0px, 120%);
-  opacity: 0;
   padding: 35px 0 0 0;
   margin: 0 auto;
-}
-
-.portfolio__button._active {
-  -webkit-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
-  transform: translate(0px, 0px);
-  opacity: 1;
 }
 
 .filter__list {
