@@ -254,8 +254,8 @@ body, html {
   width: 100%;
   -webkit-animation-name: arrow;
   animation-name: arrow;
-  -webkit-animation-duration: 0.7s;
-  animation-duration: 0.7s;
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
@@ -369,18 +369,18 @@ body, html {
   }
   @-webkit-keyframes arrow {
     0% {
-      bottom: -80%;
+      bottom: -100%;
     }
     100% {
-      bottom: -110%;
+      bottom: -140%;
     }
   }
   @keyframes arrow {
     0% {
-      bottom: -80%;
+      bottom: -100%;
     }
     100% {
-      bottom: -110%;
+      bottom: -140%;
     }
   }
 }

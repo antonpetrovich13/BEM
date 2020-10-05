@@ -119,7 +119,7 @@ body,html{
 		position: absolute;
 		width: 100%;
 		animation-name: arrow;
-		animation-duration:0.7s;
+		animation-duration:0.9s;
 		animation-timing-function:linear;
 		animation-iteration-count:infinite;
 		animation-direction:alternate;
@@ -209,10 +209,10 @@ body,html{
 	}
 	@keyframes arrow {
 		0%{
-			bottom: -80%;
+			bottom: -100%;
 		}
 		100%{
-			bottom: -110%;
+			bottom: -140%;
 		}
 	}
 }
