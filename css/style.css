@@ -113,15 +113,19 @@ body, html {
   padding: 0 10px;
 }
 
+.container_m {
+  height: 100%;
+}
+
 .main {
-  padding: 115px 0 0 0;
   position: relative;
   background: url(../img/fon_1.png) no-repeat;
   background-size: cover;
   min-height: 100vh;
 }
 
-.main__wrapper {
+.main__wrap {
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,6 +133,21 @@ body, html {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.main__wrapper {
+  padding: 100px 0;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -173,7 +192,6 @@ body, html {
   -webkit-transition: all 0.8s ease 0.4s;
   -o-transition: all 0.8s ease 0.4s;
   transition: all 0.8s ease 0.4s;
-  margin: 119px 0 0 0;
   max-width: 754px;
   text-align: center;
   font-size: 34px;
@@ -213,7 +231,11 @@ body, html {
   -webkit-transition: all 0.8s ease 0.8s;
   -o-transition: all 0.8s ease 0.8s;
   transition: all 0.8s ease 0.8s;
-  margin: 50px 0 0 0;
+}
+
+.main__row {
+  position: relative;
+  text-align: center;
 }
 
 .main__button._active {
@@ -228,10 +250,11 @@ body, html {
   -o-transition: all 0.8s ease 1.1s;
   transition: all 0.8s ease 1.1s;
   position: absolute;
+  width: 100%;
   -webkit-animation-name: arrow;
   animation-name: arrow;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
@@ -246,19 +269,19 @@ body, html {
 
 @-webkit-keyframes arrow {
   0% {
-    bottom: 10%;
+    bottom: -100%;
   }
   100% {
-    bottom: 8%;
+    bottom: -150%;
   }
 }
 
 @keyframes arrow {
   0% {
-    bottom: 10%;
+    bottom: -100%;
   }
   100% {
-    bottom: 8%;
+    bottom: -150%;
   }
 }
 
@@ -310,18 +333,6 @@ body, html {
   opacity: 0.8;
 }
 
-@media (max-height: 605px) {
-  .main {
-    padding: 50px 0 0 0;
-  }
-  .main__title {
-    margin: 80px 0 0 0;
-  }
-  .main__button {
-    margin: 30px 0 0 0;
-  }
-}
-
 @media (max-height: 357px) {
   .main__logo a {
     -webkit-box-flex: 0;
@@ -338,73 +349,27 @@ body, html {
   .main__title:after {
     margin: 10px auto;
   }
-  .main__button {
-    margin: 25px 0 0 0;
-  }
-  @-webkit-keyframes arrow {
-    0% {
-      bottom: 5%;
-    }
-    100% {
-      bottom: 2%;
-    }
-  }
-  @keyframes arrow {
-    0% {
-      bottom: 5%;
-    }
-    100% {
-      bottom: 2%;
-    }
-  }
 }
 
 @media (max-width: 772px) {
+  .main__wrapper {
+    padding: 50px 0 90px 0;
+  }
   .main__logo a {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 130px;
     flex: 0 1 130px;
   }
   .main__title {
-    margin: 80px 0 0 0;
     font-size: 24px;
   }
   .main__title span {
     font-size: 22px;
   }
-  .main__button {
-    margin: 80px 0 0 0;
-  }
-}
-
-@media (max-width: 550px) {
-  .main__title {
-    margin: 80px 0 0 0;
-  }
-  .main__button {
-    margin: 55px 0 0 0;
-  }
-  @-webkit-keyframes arrow {
-    0% {
-      bottom: 12%;
-    }
-    100% {
-      bottom: 9%;
-    }
-  }
-  @keyframes arrow {
-    0% {
-      bottom: 12%;
-    }
-    100% {
-      bottom: 9%;
-    }
-  }
 }
 
 @media (max-width: 395px) {
   .main__title {
-    margin: 50px 0 0 0;
     font-size: 22px;
   }
   .main__title span {
@@ -412,15 +377,6 @@ body, html {
   }
   .main__title:after {
     margin: 20px auto;
-  }
-  .main__button {
-    margin: 100px 0 0 0;
-  }
-}
-
-@media (max-width: 343px) {
-  .main__button {
-    margin: 60px 0 0 0;
   }
 }
 
